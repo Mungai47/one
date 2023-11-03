@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+
+import { Link } from 'react-scroll';
 import { TiThMenu, TiTimes } from "react-icons/ti";
 import { useState } from "react";
 
@@ -13,27 +14,27 @@ function Header() {
 
   return (
     <header className="bg-[#141c27] text-white shadow-lg fixed w-full z-20">
-        <div className="flex items-center justify-between p-4 w-4/5 mx-auto">
+        <div className="flex items-center justify-between p-4 w-4/5 mx-auto cursor-pointer">
             <div className="text-2xl lg:text-3xl font-bold">
-                <Link to="/" >
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={1000} >
                    <h2 className="font-signature text-green">Mungai</h2>
                 </Link>
             </div>
             <div className="hidden lg:flex">
                 <ul className="flex items-center gap-5 font-semibold text-lg">
-                    <Link to="/" >
+                    <Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={1000} >
                        <li className="hover:underline">Home</li>
                     </Link>
-                    <Link to="/portfolio" >
+                    <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-70} duration={1000} >
                        <li className="hover:underline">Porfolio</li>
                     </Link>
-                    <Link to="/services" >
+                    <Link activeClass="active" to="services" spy={true} smooth={true} offset={-70} duration={1000} >
                        <li className="hover:underline">Services</li>
                     </Link>
-                    <Link to="/contacts" >
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={1000} >
                        <li className="hover:underline">Contacts</li>
                     </Link>
-                    <Link to="/contacts" >
+                    <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={1000}>
                         <button className="bg-green text-black px-5 py-1 rounded-full hover:opacity-80">Hire Me</button>
                     </Link>
                 </ul>
@@ -45,19 +46,19 @@ function Header() {
 
             {nav && (
                 <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen font-semibold text-4xl cursor-pointer bg-gradient-to-b from-black to-gray-800">
-                   <Link to="/" onClick={closeMenu}>
+                   <Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={1000} onClick={closeMenu}>
                       <li className="hover:underline px-4 py-6">Home</li>
                    </Link>
-                   <Link to="/portfolio" onClick={closeMenu}>
+                   <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-70} duration={1000} onClick={closeMenu}>
                       <li className="hover: px-4 py-6">Porfolio</li>
                    </Link>
-                   <Link to="/services" onClick={closeMenu}>
+                   <Link activeClass="active" to="services" spy={true} smooth={true} offset={-70} duration={1000} onClick={closeMenu}>
                       <li className="hover:underline px-4 py-6">Services</li>
                    </Link>
-                   <Link to="/contacts" onClick={closeMenu}>
+                   <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={1000} onClick={closeMenu}>
                       <li className="hover:underline px-4 py-6">Contacts</li>
                    </Link>
-                   <Link to="/contacts" onClick={closeMenu}>
+                   <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={1000} onClick={closeMenu}>
                        <button className="bg-green text-black px-5 py-1 rounded-full hover:opacity-80">Hire Me</button>
                    </Link>
                 </ul>

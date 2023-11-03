@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        scroll: 'scroll 10s linear infinite',
+      },
+    },
     fontFamily: {
       signature: ["Mochiy Pop One"],
     },
