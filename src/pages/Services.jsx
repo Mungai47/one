@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Services() {
   return (
@@ -7,4 +6,3 @@ function Services() {
 }
 
 export default Services
-

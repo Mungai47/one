@@ -12,7 +12,7 @@ function Header() {
     }
 
   return (
-    <header className="bg-[#141c27] text-white shadow-lg fixed w-full z-10">
+    <header className="bg-[#141c27] text-white shadow-lg fixed w-full z-20">
         <div className="flex items-center justify-between p-4 w-4/5 mx-auto">
             <div className="text-2xl lg:text-3xl font-bold">
                 <Link to="/" >

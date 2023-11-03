@@ -25,9 +25,8 @@ function Hero() {
                         </div>
                     </div>
                 </div>                    
-                <div className='hidden lg:block relative'>
-                    <img src="/public/images/image1.png" alt="Profile Image" className="absolute z-10 " />
-                    <div className="w-64 h-96 bg-gray-700 bg-green rotate-12"></div>
+                <div className='hidden lg:block '>
+                    <img src="/public/images/image1.png" alt="Profile Image" className=" w-full h-full object-cover" />                    
                 </div>
             </div>
         </div>
