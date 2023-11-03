@@ -26,7 +26,7 @@ function Hero() {
                     </div>
                 </div>                    
                 <div className='hidden lg:block '>
-                    <img src="/public/images/image1.png" alt="Profile Image" className=" w-full h-full object-cover" />                    
+                    <img src="/images/image1.png" alt="Profile Image" className=" w-full h-full object-cover" />                    
                 </div>
             </div>
         </div>

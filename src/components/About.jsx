@@ -14,7 +14,7 @@ function About() {
                         </button>
             </div>
             <div className="pb-20">
-                <img src="/public/images/image1.png" alt="Profile Image" className=""/>
+                <img src="/images/image1.png" alt="Profile Image" className=""/>
             </div>
         </div>
     </div>
