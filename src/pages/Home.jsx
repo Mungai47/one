@@ -2,6 +2,8 @@ import Hero from '../components/Hero'
 import MyServices from '../components/MyServices'
 import About from '../components/About'
 import Education from '../components/Education'
+import Portfolio from '../components/Portfolio'
+import Testimonials from '../components/Testimonials'
 
 function Home() {
   return (
@@ -10,6 +12,8 @@ function Home() {
       <MyServices/>
       <About />
       <Education />
+      <Portfolio />
+      <Testimonials />
     </div>
   )
 }
